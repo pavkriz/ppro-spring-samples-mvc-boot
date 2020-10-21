@@ -26,7 +26,7 @@ public class ShopApplication implements WebMvcConfigurer {
     }
 
     @Bean
-    @Primary    // prioritne pouzit tuto definici beany micto definice zpusobene anotaci @Service u tridy SimpleKatalog
+    @Primary    // prioritne pouzit tuto definici beany misto definice zpusobene anotaci @Service u tridy SimpleKatalog
     Katalog getKatalog() {
         Katalog k = new SimpleKatalog();
         k.pridej(new Polozka(1, "Čepice FIM", 123.5, 19));
